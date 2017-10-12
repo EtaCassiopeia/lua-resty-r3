@@ -2,3 +2,6 @@
 *-sv
 tmp
 r3
+
+.idea/
+*.iml
