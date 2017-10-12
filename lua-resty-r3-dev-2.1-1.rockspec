@@ -1,8 +1,8 @@
 package = "lua-resty-r3"
-version = "2.0-1"
+version = "2.1-1"
 source = {
     url = "https://github.com/EtaCassiopeia/lua-resty-r3",
-    tag = "v2.0"
+    tag = "v2.1"
 }
 description = {
     summary = "libr3 Lua-Openresty implementation",
