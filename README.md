@@ -102,3 +102,17 @@ location / {
 cd /path/to/lua-resty-r3
 docker run -p 89:80 -v "$(pwd)":/code -it toritori0318/lua-resty-r3 /opt/openresty/nginx/sbin/nginx
 ```
+## Upload
+
+Before uploading you rock to the LuaRocks server you have to tag your release. To tag a release in Git, use the "git tag" command, and remember to pass the "--tags" flag to "git push":
+
+```
+git tag v1.0
+git push --tags
+```
+
+When you've verified that creating the rock works, you can upload it to the LuaRocks server with the upload command:
+
+```
+luarocks upload lua-resty-r3-<version>.rockspec --api-key=<REDACTED>
+```
